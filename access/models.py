@@ -72,7 +72,9 @@ class Reservation(models.Model):
 
     This model represetns a Reservation.
     """
-    date = models.DateField()
-    time = models.TimeField()
+    start_date = models.DateField()
+    start_time = models.TimeField()
+    end_date = models.DateField()
+    end_time = models.TimeField()
     machine = models.ForeignKey(Machine)
     member = models.ForeignKey(User)
