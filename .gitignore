@@ -90,3 +90,7 @@ ENV/
 
 # Idea
 .idea
+
+# Vim
+*.swp
+*.swo
