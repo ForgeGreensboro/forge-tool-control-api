@@ -8,8 +8,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.contrib.auth.models import User
-
-from access.models import Machine
+from .Machine import Machine
 
 
 class LogEntry(models.Model):
@@ -27,4 +26,4 @@ class LogEntry(models.Model):
     created_at = models.DateTimeField()
     entry_type = models.CharField(max_length=3, choices=LOG_ENTRY_TYPES)
     user = models.ForeignKey(User, related_name='logEntry')
-    machine = models.ForeignKey('Machine')
+    machine = models.ForeignKey(Machine)

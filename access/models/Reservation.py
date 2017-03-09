@@ -9,7 +9,7 @@ from __future__ import unicode_literals
 from django.db import models
 from django.contrib.auth.models import User
 
-from access.models import Machine
+from .Machine import Machine
 
 
 class Reservation(models.Model):
@@ -21,5 +21,5 @@ class Reservation(models.Model):
     start_time = models.TimeField()
     end_date = models.DateField()
     end_time = models.TimeField()
-    machine = models.ForeignKey('Machine')
+    machine = models.ForeignKey(Machine)
     member = models.ForeignKey(User)
