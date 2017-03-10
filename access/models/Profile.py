@@ -23,6 +23,6 @@ class Profile(models.Model):
     Add the required fields to the User Model.
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    department_head = models.ForeignKey('Department', null=True)
+    department_head = models.ForeignKey(Department, null=True)
     valid_membership = models.BooleanField()
-    member_card_id = models.CharField(max_length=256, default="n-a")
+    member_card_id = models.CharField(max_length=256, null=True)

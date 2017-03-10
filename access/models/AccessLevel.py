@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Models for forge tool access control
+"""
+
+Models for forge tool access control
 
 This module contains the access control models.
 
@@ -13,10 +15,12 @@ from .Machine import  Machine
 
 
 class AccessLevel(models.Model):
-    """ Access Level for each machine.
+    """
+    Access Level for each machine.
 
     This Model represents the Access Level required for each
     machine.
+
     """
     ACCESS_LEVEL_CHOICES = (
         ('FULL', 'Full access to Machine'),

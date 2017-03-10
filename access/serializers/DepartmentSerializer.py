@@ -7,7 +7,7 @@ from access.models import Department
 from rest_framework import serializers
 
 
-class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
+class DepartmentSerializer(serializers.ModelSerializer):
     """
     This serializer knows how to (de)serialize the Department Model
     """

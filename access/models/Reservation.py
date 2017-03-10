@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Models for forge tool access control
+"""
+
+Models for forge tool access control
 
 This module contains the access control models.
 
@@ -13,10 +15,14 @@ from .Machine import Machine
 
 
 class Reservation(models.Model):
-    """ Reservation Model
-
-    This model represetns a Reservation.
     """
+
+    Reservation Model
+
+    This model represents a Reservation.
+
+    """
+
     start_date = models.DateField()
     start_time = models.TimeField()
     end_date = models.DateField()

@@ -8,7 +8,7 @@ from rest_framework import serializers
 from access.models import Profile
 
 
-class ProfileSerializer(serializers.HyperlinkedModelSerializer):
+class ProfileSerializer(serializers.ModelSerializer):
     """
     Profile Serializer serializes the Profile Model.
     """

@@ -17,5 +17,5 @@ class Machine(models.Model):
         This Model represents a machine in the system.
     """
     mac_address = models.CharField(max_length=15)
-    machine_name = models.CharField(max_length=50)
+    machine_name = models.CharField(max_length=128)
     department = models.ForeignKey(Department)

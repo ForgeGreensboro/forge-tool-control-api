@@ -7,7 +7,7 @@ from access.models import AccessLevel
 from rest_framework import serializers
 
 
-class AccessLevelSerializer(serializers.HyperlinkedModelSerializer):
+class AccessLevelSerializer(serializers.ModelSerializer):
     """
     This knows how to (de)serializer the AccessLevel model
     """
