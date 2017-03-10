@@ -24,7 +24,9 @@ schema_view = get_schema_view(title='API Access')
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-
+router.register(r'departments', views.DepartmentViewSet)
+router.register(r'accesslevels', views.AccessLevelViewSet)
+router.register(r'machines', views.MachineViewSet)
 urlpatterns = [
     url(r'^schema/$', schema_view),
     url(r'^', include(router.urls)),

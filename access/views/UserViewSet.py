@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from contrib.auth.models import User
+from django.contrib.auth.models import User
 from access.serializers import UserSerializer
 
 

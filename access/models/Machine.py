@@ -8,7 +8,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-from access.models import Department
+from .Department import Department
 
 
 class Machine(models.Model):
@@ -17,5 +17,5 @@ class Machine(models.Model):
         This Model represents a machine in the system.
     """
     mac_address = models.CharField(max_length=15)
-    machine_name = models.CharField(max_length=50)
-    department = models.ForeignKey('Department')
+    machine_name = models.CharField(max_length=128)
+    department = models.ForeignKey(Department)
